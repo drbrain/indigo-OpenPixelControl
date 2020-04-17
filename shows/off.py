@@ -18,7 +18,8 @@ if not client.can_connect():
 
 pixels = [(0, 0, 0)] * led_count
 
-client.put_pixels(pixels, channel = channel)
+while True:
+    client.put_pixels(pixels, channel = channel)
 
-sleep(1)
+    sleep(1)
 
